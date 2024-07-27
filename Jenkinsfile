@@ -21,10 +21,10 @@ pipeline {
             echo 'I will always say Hello again!'
         }
         failure{
-            echo 'If pipeline fails it will this output'
+            echo 'If pipeline fails it will give this output'
         }
         success{
-            echo 'If pipeline fails it will this output'
+            echo 'If pipeline success it will give this output'
         }
     }
 }
