@@ -21,7 +21,7 @@ pipeline {
         stage("environemt variable check"){
             steps{
                 sh """
-                    echo "Service user is $CC"'
+                    echo "Service user is $CC"
                     
                     env
                 """
