@@ -16,4 +16,12 @@ pipeline {
             }
         }
     }
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+        failure{
+            echo 'If pipeline fails it will this output'
+        }
+    }
 }
