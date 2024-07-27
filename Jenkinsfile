@@ -4,6 +4,9 @@ pipeline {
         // Timeout counter starts AFTER agent is allocated
         timeout(time: 1, unit: 'SECONDS')
     }
+    environment { 
+        CC = 'clang'
+    }
     stages {
         stage('Example') {
             steps {
@@ -13,6 +16,16 @@ pipeline {
         stage("building"){
             steps {
                 echo "building the app"
+            }
+        }
+        stage{
+            steps{
+                steps {
+                sh 'echo "Service user is $SERVICE_CREDS_USR"'
+                sh 'echo "Service password is $SERVICE_CREDS_PSW"'
+                sh 'curl -u $SERVICE_CREDS https://myservice.example.com'
+                sh 'env'
+            }
             }
         }
     }
