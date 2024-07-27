@@ -10,5 +10,10 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        stage("building"){
+            steps {
+                echo "building the app"
+            }
+        }
     }
 }
