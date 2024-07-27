@@ -22,7 +22,6 @@ pipeline {
             steps{
                 sh """
                     echo "Service user is $CC"
-                    
                     env
                 """
             }
