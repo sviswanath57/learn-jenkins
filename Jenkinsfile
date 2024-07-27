@@ -23,5 +23,8 @@ pipeline {
         failure{
             echo 'If pipeline fails it will this output'
         }
+        success{
+            echo 'If pipeline fails it will this output'
+        }
     }
 }
