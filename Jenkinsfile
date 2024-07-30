@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                echo 'Hello this devops - jenkins s'
+                echo 'Hello this devops - jenkinsss'
             }
         }
         stage("building"){
