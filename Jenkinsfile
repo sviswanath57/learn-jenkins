@@ -56,7 +56,7 @@ pipeline {
     }
     post { 
         always { 
-            echo 'I will always say Hello again!'
+            echo 'I will always say Devops again!'
         }
         failure{
             echo 'If pipeline fails it will give this output'
