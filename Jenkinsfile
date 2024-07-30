@@ -22,7 +22,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                echo 'Hello this devops'
+                echo 'Hello this devops - jenkins'
             }
         }
         stage("building"){
